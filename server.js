@@ -11,7 +11,7 @@ db.once('open', () => console.log('Pripojeno k databazi'))
 
 app.use(express.json())
 
-const productRouter = require('./routes/product')
+const productRouter = require('./routes/products')
 app.use('/product', productRouter)
 
 
